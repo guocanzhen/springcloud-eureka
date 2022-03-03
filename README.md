@@ -1,1 +1,3 @@
 主工程
+
+springcloud服务注册中心eureka

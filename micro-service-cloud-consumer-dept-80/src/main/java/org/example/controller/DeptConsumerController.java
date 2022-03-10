@@ -1,5 +1,6 @@
 package org.example.controller;
 
+import lombok.extern.log4j.Log4j2;
 import org.example.entity.Dept;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -12,10 +13,12 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/consumer/dept")
+@Log4j2
 public class DeptConsumerController {
 
     /**
-     * 这种方式是直调用服务方的方法，根本没有用到 Spring Cloud
+     * 这种方式是直调用服务方的方法，根本没有用到 Spring Cloud 的服务
+     * 在开启了@LoadBalanced负载均衡后，无法使用ip调通，而应该调服务
      */
 //    private static final String REST_URL_PROVIDER_PREFIX = "http://localhost:8001/";
 

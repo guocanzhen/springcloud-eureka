@@ -34,6 +34,10 @@ public interface DeptFeignService {
     @GetMapping("list")
     List<Dept> list();
 
+    /**
+     * OpenFeign 是如何进行超时控制的
+     * @return
+     */
     @GetMapping("/feign/timeout")
     String deptFeignTimeout();
 }

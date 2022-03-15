@@ -15,4 +15,10 @@ public interface DeptService {
      * @return
      */
     String deptInfoTimeout(Integer id);
+
+    /**
+     * Hystrix 熔断机制案例
+     * @return
+     */
+    String deptCircuitBreaker(Integer id);
 }

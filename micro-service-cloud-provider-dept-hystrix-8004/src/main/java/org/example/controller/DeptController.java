@@ -36,4 +36,16 @@ public class DeptController {
         return result + "，端口号：" + serverPort;
     }
 
+    /**
+     * Hystrix 服务熔断
+     * @param id
+     * @return
+     */
+    @GetMapping("circuit/{id}")
+    public String deptCircuitBreaker(@PathVariable("id") Integer id) {
+        String result = deptService.deptCircuitBreaker(id);
+        log.info("result：{}", result);
+        return result;
+    }
+
 }

@@ -12,3 +12,6 @@ Hystrix 客户端服务降级：全局的服务降级方法；指定专属的回
 
 Hystrix 客户端服务降级：openFeign Hystrix 解耦降级逻辑 ：dept-feign-fb
 
+Hystrix 服务熔断 ： dept-hystrix-8004
+
+Hystrix 故障监控：dept-hystrix-8004、dept-hystrix-dashboard-9002

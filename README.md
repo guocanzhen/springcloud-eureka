@@ -17,3 +17,5 @@ Hystrix 服务熔断 ： dept-hystrix-8004
 Hystrix 故障监控：dept-hystrix-8004、dept-hystrix-dashboard-9002
 
 Spring Cloud Gateway - Predicate 断言，GatewayFilter 网关过滤器 ： gateway-9527
+
+Spring Config 分布式配置中心 - 访问git仓库文件：config-center-3344、config-client-3355、config-client-3366
